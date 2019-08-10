@@ -1,9 +1,107 @@
 body{
-    background: linear-gradient(rgb(100,50,50), rgb(80,20,20)) no-repeat;
+    /* background: linear-gradient(rgb(100,50,50), rgb(80,20,20)) no-repeat; */
     color: white;
     text-align: center;
+    /* background-color: rgb(1, 47, 90); */
+    background-image: linear-gradient(to right, rgb(1, 47, 90), white, rgb(1, 47, 90));
 }
 
 img{
     margin: 1%;
+    max-width: 100%;
+    width: 100%;
 }
+
+
+/*Header*/
+.header{
+  position: relative;
+  width: 1000px;
+  height: 120px;
+  top: -10px;
+  background-image: linear-gradient(to left, rgb(40, 40, 40), rgba(17,18, 19) 55%);
+  background-color: rgb(17, 18,19);
+  margin: auto;
+}
+
+.logo{
+  position: absolute;
+  top: 55%;
+  left: 2%;
+  transform: translate(0%, -50%);
+}
+
+.header-label{
+  position: relative;
+  top: 61%;
+  left: 20%;
+  padding-left: 20px;
+  cursor: pointer;
+  font-size: 13px;
+  color: white;
+  transition: color 0.4s ease;
+}
+
+.header-label:hover{
+  color: royalblue;
+}
+
+.search-bar{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.search-input{
+  border-radius: 0px 10px 10px 0px;
+  border: none;
+  height: 20px;
+  font-family: "times new roman";
+  margin-left: -5px;
+}
+
+.search-button{
+  border-radius: 10px 0px 0px 10px;
+  border: none;
+  background-color: white;
+  font-family: "times new roman";
+  height: 22px;
+}
+
+
+
+/*Slider*/
+#slideshow-container{
+  position: relative;
+  width: 1000px;
+  margin: auto;
+  margin-top: -20px;
+}
+
+.slide-img{
+  position: relative;
+  display: none;
+  margin-left: -10px;
+}
+
+.slider-button{
+  position: relative;
+  float: left;
+  background-color: rgb(44, 131, 176); /*Selected 163 163 163*/
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  margin-left: 15px;
+  left: 15px;
+  top: -65px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.slider-button:hover{
+  border: 1px solid white;
+}
+
+
+
+
