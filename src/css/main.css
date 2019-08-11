@@ -14,7 +14,6 @@ h2{
   font-weight: normal;
 }
 
-
 /*Header*/
 .header{
   position: relative;
@@ -70,8 +69,6 @@ h2{
   height: 22px;
 }
 
-
-
 /*Slider*/
 .slide-container{
   width: var(--main-width);
@@ -118,6 +115,7 @@ h2{
   height: 150px;
   background-color: rgba(17,18, 19);
   margin: auto;
+  margin-top: -1px;
 }
 
 .quote-container{
@@ -137,8 +135,6 @@ h2{
   cursor: pointer;
 }
 
-
-
 /* Body of website */
 .body-container{
   position: relative;
@@ -150,10 +146,8 @@ h2{
 
 /* Articles */
 .article-container{
-  border: 1px solid red;
   position: relative;
   width: 73%;
-  /* height: 60%; */
   float: left;
 }
 
@@ -163,6 +157,10 @@ h2{
   position: relative;
   padding: 10px;
   border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+#page2, #page3{
+  display: none;
 }
 
 .article img{
@@ -200,11 +198,11 @@ h2{
   width: 150px;
   height: 30px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 /* Side bar */ 
 .side-bar{
-  border: 2px solid green;
   position: relative;
   width: 26%;
   height: 60%;
@@ -228,15 +226,56 @@ h2{
 
 /* Change page buttons */
 .change-page-button-container{
-  border: 1px solid red;
   float: left;
+  margin-left: 20px;
+  margin-top: 10px;
+  text-align: center;
 }
+
+.change-page-button-container > * {
+  background-color: rbg(238, 238, 238);
+  color: rgb(161, 154, 182);
+  border: none;
+  font-family: calibri;
+  font-size: 12px;
+  text-align: center;
+}
+
+.change-page-button-container button{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  
+}
+
+.page-button-active{
+  background-color: rgb(193, 193, 193) !important;
+  color: white !important;
+  font-weight: bold !important;
+}
+
+.page-button{
+  background-color: rbg(238, 238, 238);
+  color: rgb(161, 154, 182);
+  font-weight: normal;
+  
+}
+
+
+.change-page-button-container button[name="next"]{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  font-size: 8px;
+  margin-top: 1px;
+  margin-left: 4px;
+}
+
 
 /* Sponsor block */
 .sponsor-container{
   position: relative;
   float:left;
-  border: 1px solid yellow;
   width: 99.8%;
 }
 
@@ -261,15 +300,40 @@ h2{
   height: 90%;
 }
 
-
 /*Footer*/
 .footer{
   margin: auto;
   width: var(--main-width);
-  background-color: black;
-  height: 200px;
+  background-color: rgb(15, 15, 15);
   margin-top: -20px;
+  overflow: auto;
 }
 
+.footer > div{
+  float: left;
+  margin-top: 10px;
+}
 
+.about{
+  margin-left: 40px;
+  margin-right: 90px;
+}
 
+.flickr{
+  margin-right: 90px;
+}
+
+.footer h2{
+  color: white;
+}
+
+.footer a{
+  color: lightgrey;
+  font-size: 13px;
+}
+
+.footer p{
+  color: grey;
+  font-size: 13px;
+  line-height: 20px;
+}
