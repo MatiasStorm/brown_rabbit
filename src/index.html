@@ -2,7 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Title</title>
+        <title>Title</title>    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <link rel="stylesheet" href="css/main.css" type="text/css" >
     </head>  
     
@@ -28,12 +30,12 @@
       <!-- Slider -->
       <div class="slide-container">
         <div class="slide-img-container">
-          <img src="img/slider1.jpg"/>
-          <img src="img/slider2.jpg"/>
-          <img src="img/slider3.jpg"/>
-          <img src="img/slider4.jpg"/>
-          <img src="img/slider5.jpg"/>
-          <img src="img/slider6.jpg"/>
+          <img src="img/slider1.jpg" class="slider-img"/>
+          <img src="img/slider2.jpg" class="slider-img"/>
+          <img src="img/slider3.jpg" class="slider-img"/>
+          <img src="img/slider4.jpg" class="slider-img"/>
+          <img src="img/slider5.jpg" class="slider-img"/>
+          <img src="img/slider6.jpg" class="slider-img"/>
         </div>
 
         <div class="slider-button-container">
@@ -48,15 +50,18 @@
       
       <!-- Back bar -->
       <div class="back-bar">
-        <div class="quote-container">
-          <img src="img/quote.jpg" alt="">
-        </div>
-        <div class="social-icons-container">
-          <a href="" class="social-icon"><img src="img/twitter.jpg"  ></a>
-          <a href="" class="social-icon"><img src="img/facebook.jpg" ></a>
-          <a href="" class="social-icon"><img src="img/wifi.jpg"     ></a>
-          <a href="" class="social-icon"><img src="img/fire.jpg"     ></a>
-          <a href="" class="social-icon"><img src="img/mail.jpg"     ></a>
+        <div style="position: relative; overflow:auto">
+          <div class="quote">
+            <h2>&ldquo;To create an environment in which knowledge <br>
+              about cofee and its sphere can be obtained&rdquo;</h2>
+          </div>
+          <div class="social-icons-container">
+            <a href="#"><img src="img/twitter.jpg"  class="social-icon" ></a>
+            <a href="#"><img src="img/facebook.jpg" class="social-icon" ></a>
+            <a href="#"><img src="img/wifi.jpg"     class="social-icon" ></a>
+            <a href="#"><img src="img/fire.jpg"     class="social-icon" ></a>
+            <a href="#"><img src="img/mail.jpg"     class="social-icon" ></a>
+          </div>
         </div>
       </div>
       
@@ -241,9 +246,9 @@
             </p>
             <button onclick="readMore(8)">Read more</button>
           </article>  
-        </div>     
-        
+        </div>       
       </div>   
+      
         <div class="change-page-button-container">
           <span class="page-of">Page 1 of 3</span>
           <button onclick="changePage(0)" class="page-button-active page-button">1</button>
@@ -316,7 +321,7 @@
         
         <div class="flickr">
           <h2>NBC Flickr Stream</h2>
-          <img src="img/flickr.jpg" alt="">
+          <img src="img/flickr.jpg" alt="Flickr stream" class="flickr-img">
         </div>
         
         <div class="contact">
@@ -331,11 +336,11 @@
           </p>
           
           <div class="social-icons-container" style="margin-top: 25px;">
-            <a href="" class="social-icon"><img src="img/twitter.jpg"  ></a>
-            <a href="" class="social-icon"><img src="img/facebook.jpg" ></a>
-            <a href="" class="social-icon"><img src="img/wifi.jpg"     ></a>
-            <a href="" class="social-icon"><img src="img/fire.jpg"     ></a>
-            <a href="" class="social-icon"><img src="img/mail.jpg"     ></a>
+            <a href="#"><img src="img/twitter.jpg"  class="social-icon" ></a>
+            <a href="#"><img src="img/facebook.jpg" class="social-icon" ></a>
+            <a href="#"><img src="img/wifi.jpg"     class="social-icon" ></a>
+            <a href="#"><img src="img/fire.jpg"     class="social-icon" ></a>
+            <a href="#"><img src="img/mail.jpg"     class="social-icon" ></a>
           </div>
           
         </div>

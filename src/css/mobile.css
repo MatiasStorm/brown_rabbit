@@ -1,0 +1,363 @@
+@media screen and (max-width: 649px){
+  :root{
+    --main-width: 100%;
+  }
+  
+  body{
+      background-image: linear-gradient(to right, rgb(1, 47, 90), white, rgb(1, 47, 90));
+  }
+  
+  img{
+      max-width: 100%;
+  }
+  
+  h2{
+    font-weight: normal;
+    font-size: 22px;
+  }
+  
+  /*Header*/
+  .header{
+    position: relative;
+    width: var(--main-width);
+    height: 100px;
+    top: -10px;
+    background-image: linear-gradient(to left, rgb(40, 40, 40), rgba(17,18, 19) 55%);
+    background-color: rgb(17, 18,19);
+    margin: auto;
+  }
+  
+  .logo{
+    position: absolute;
+    top: 55%;
+    left: 2%;
+    width: 39%;
+    transform: translate(0%, -50%);
+  }
+  
+  .header-label{
+    position: relative;
+    top: 57%;
+    left: 43%;
+    padding-left: 0.5vw;
+    cursor: pointer;
+    font-size: 1.5vw;
+    color: white;
+    transition: color 0.4s ease;
+  }
+  
+  .header-label:hover{
+    color: rgb(44, 131, 176);
+  }
+  
+  .search-bar{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .search-input{
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+    height: 20px;
+    font-family: "times new roman";
+    margin-left: -5px;
+  }
+  
+  .search-button{
+    border-radius: 10px 0px 0px 10px;
+    border: none;
+    background-color: white;
+    font-family: "times new roman";
+    height: 22px;
+  }
+  
+  /*Slider*/
+  .slide-container{
+    width: 94vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10px;
+    overflow: hidden;
+    text-align: left;
+  }
+  
+  .slide-img-container{
+    position: relative;
+    width: calc(6 * 97.6vw);
+    transition: left 2s;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    font-size: 0;
+    overflow: hidden;
+  }
+  
+  .slider-img{
+    width: 97.6vw;
+  }
+  
+  .slider-button-container{
+    float: left;
+    margin-top: -5vh;
+    margin-left: 3vw;
+  }
+  
+  .slider-button{
+    position: relative;
+    margin-left: 10px;
+    float: left;
+    background-color: rgb(44, 131, 176);
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    cursor: pointer; 
+    border: 1px solid transparent;
+  }
+  
+  .slider-button:hover{
+    border: 1px solid white;
+  }
+  
+  /* Back bar */
+  .back-bar{
+    width: var(--main-width);
+    background-color: rgba(17,18, 19);
+    margin: auto;
+    margin-top: -1px;
+  }
+  
+  .quote{
+    color: rgb(163, 163, 163);
+    margin-left: 2%;
+    margin-top: 1%;
+    float: left;
+  }
+  
+  .quote h2{
+    font-size: 110%;
+  }
+  
+  .social-icons-container{
+    position: relative;
+    float: right;
+    margin: 3% 2% 2% 0%;
+    /* margin-right: 2%; */
+  }
+  
+  
+  /* Body of website */
+  .body-container{
+    position: relative;
+    width: var(--main-width);
+    background-color: white;
+    margin: auto;
+    overflow: auto;
+  }
+  
+  /* Articles */
+  .article-container{
+    position: relative;
+    width: 65%;
+    float: left;
+  }
+  
+  .article{
+    margin-left: 10px;
+    margin-top: 20px;
+    position: relative;
+    padding: 10px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+  }
+  
+  #page2, #page3{
+    display: none;
+  }
+  
+  .article img{
+    float: left;
+    border: 4px solid rgb(238, 238, 238);
+    border-collapse: collapse;
+  }
+  
+  .article  h2, .article > a, .article p{
+    position: relative;
+    left: 20px;
+  }
+  
+  .article h2{
+    position: relative;
+    margin: 0px;
+  }
+  
+  .article > a{
+    color: rgb(44, 131, 176);
+    font-size: 10px;
+  }
+  
+  .hidden-text{
+    display: none;
+  }
+  
+  .article button{
+    position: relative;
+    color: white;
+    background: rgb(92, 170, 210);
+    border-radius: 5px;
+    border: none;
+    margin-left: 30px;
+    width: 150px;
+    height: 30px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Side bar */ 
+  .side-bar{
+    position: relative;
+    width: 32%;
+    height: 60%;
+    float: right;
+    background-image: linear-gradient(to bottom, rgb(238, 238, 238) 60%, white);
+  }
+  
+  .side-bar > * {
+    margin-left: 20px;
+  }
+  
+  .side-bar a{
+    color: rgb(44, 131, 176);
+    transition: color 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .side-bar a:hover{
+    color: rgb(74, 161, 206);
+  }
+  
+  /* Change page buttons */
+  .change-page-button-container{
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .change-page-button-container > * {
+    background-color: rbg(238, 238, 238);
+    color: rgb(161, 154, 182);
+    border: none;
+    font-family: calibri;
+    font-size: 12px;
+    text-align: center;
+  }
+  
+  .change-page-button-container button{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    
+  }
+  
+  .page-button-active{
+    background-color: rgb(193, 193, 193) !important;
+    color: white !important;
+    font-weight: bold !important;
+  }
+  
+  .page-button{
+    background-color: rbg(238, 238, 238);
+    color: rgb(161, 154, 182);
+    font-weight: normal;
+    
+  }
+  
+  
+  .change-page-button-container button[name="next"]{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    font-size: 8px;
+    margin-top: 1px;
+    margin-left: 4px;
+  }
+  
+  
+  /* Sponsor block */
+  .sponsor-container{
+    position: relative;
+    float:left;
+    width: 99.8%;
+  }
+  
+  .sponsor-container h2{
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .sponsor-table{
+    margin: auto;
+  }
+  
+  .sponsor-table td{
+    height: 2vh;
+    width: 10vw;
+    border: 8px solid rgb(238, 238, 238);
+    text-align: center;
+    padding: 5px;
+  }
+  
+  .sponsor-table img{
+    height: 5vh;
+  }
+  
+  /*Footer*/
+  .footer{
+    margin: auto;
+    width: var(--main-width);
+    background-color: rgb(15, 15, 15);
+    margin-top: -20px;
+    overflow: auto;
+  }
+  
+  .footer > div{
+    float: left;
+    margin-top: 20px;
+  }
+  
+  .about{
+    width: 40%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .contact{
+    width: 20%;
+  }
+  
+  .flickr{
+    width: 32%;
+    margin-right: 0px;
+  }
+  
+  .flickr-img{
+    width: 76%;
+  }  
+  
+  .footer h2{
+    color: white;
+  }
+  
+  .footer a{
+    color: lightgrey;
+    font-size: 13px;
+  }
+  
+  .footer p{
+    color: grey;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  
+  
+}

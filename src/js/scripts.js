@@ -1,4 +1,3 @@
-const WIDTH = 1000;
 const N_IMAGES = 6;
 SLIDER_INDEX = 0;
 
@@ -7,10 +6,11 @@ SLIDER_INDEX = 0;
 /*Slider*/
 function showSlide(index){
   SLIDER_INDEX = index;
+  var width = document.getElementsByClassName("slider-img")[0].offsetWidth;
   var container = document.getElementsByClassName("slide-img-container")[0];
   var buttons = document.getElementsByClassName("slider-button");
   container.style.transition = "transform 0.8s ease-in-out";
-  container.style.transform = "translateX(" + (-WIDTH * index) + "px)";
+  container.style.transform = "translateX(" + (-width * index) + "px)";
   
   for(i = 0; i < N_IMAGES; i++){
     buttons[i].style.backgroundColor = "rgb(44, 131, 176)";
@@ -22,13 +22,13 @@ function showRandomSlide(){
   showSlide(Math.floor(Math.random() * N_IMAGES));  
 }
 
-window.setInterval(function(){
-  showSlide(SLIDER_INDEX)
-  SLIDER_INDEX += 1;
-  if(SLIDER_INDEX >= N_IMAGES){
-    SLIDER_INDEX = 0;
-  }
-}, 2000)
+// window.setInterval(function(){
+//   showSlide(SLIDER_INDEX)
+//   SLIDER_INDEX += 1;
+//   if(SLIDER_INDEX >= N_IMAGES){
+//     SLIDER_INDEX = 0;
+//   }
+// }, 2000)
 
 showRandomSlide();
 
