@@ -1,8 +1,6 @@
 const N_IMAGES = 6;
 SLIDER_INDEX = 0;
 
-
-
 /*Slider*/
 function showSlide(index){
   SLIDER_INDEX = index;
@@ -21,17 +19,15 @@ function showSlide(index){
 function showRandomSlide(){
   showSlide(Math.floor(Math.random() * N_IMAGES));  
 }
-
-// window.setInterval(function(){
-//   showSlide(SLIDER_INDEX)
-//   SLIDER_INDEX += 1;
-//   if(SLIDER_INDEX >= N_IMAGES){
-//     SLIDER_INDEX = 0;
-//   }
-// }, 2000)
-
 showRandomSlide();
 
+window.setInterval(function(){
+  showSlide(SLIDER_INDEX)
+  SLIDER_INDEX += 1;
+  if(SLIDER_INDEX >= N_IMAGES){
+    SLIDER_INDEX = 0;
+  }
+}, 2000)
 
 
 /* Article page functions*/
