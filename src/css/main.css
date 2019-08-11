@@ -1,22 +1,24 @@
+:root{
+  --main-width: 1000px;
+}
+
 body{
-    /* background: linear-gradient(rgb(100,50,50), rgb(80,20,20)) no-repeat; */
-    color: white;
-    text-align: center;
-    /* background-color: rgb(1, 47, 90); */
     background-image: linear-gradient(to right, rgb(1, 47, 90), white, rgb(1, 47, 90));
 }
 
 img{
-    margin: 1%;
     max-width: 100%;
-    width: 100%;
+}
+
+h2{
+  font-weight: normal;
 }
 
 
 /*Header*/
 .header{
   position: relative;
-  width: 1000px;
+  width: var(--main-width);
   height: 120px;
   top: -10px;
   background-image: linear-gradient(to left, rgb(40, 40, 40), rgba(17,18, 19) 55%);
@@ -34,7 +36,7 @@ img{
 .header-label{
   position: relative;
   top: 61%;
-  left: 20%;
+  left: 42%;
   padding-left: 20px;
   cursor: pointer;
   font-size: 13px;
@@ -43,7 +45,7 @@ img{
 }
 
 .header-label:hover{
-  color: royalblue;
+  color: rgb(44, 131, 176);
 }
 
 .search-bar{
@@ -71,29 +73,37 @@ img{
 
 
 /*Slider*/
-#slideshow-container{
-  position: relative;
-  width: 1000px;
-  margin: auto;
-  margin-top: -20px;
+.slide-container{
+  width: var(--main-width);
+  height: 380px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -10px;
+  overflow: hidden;
+  text-align: left;
 }
 
-.slide-img{
+.slide-img-container{
   position: relative;
-  display: none;
-  margin-left: -10px;
+  width: calc(6 * 1000px);
+  height: 380px;
+  transition: left 2s;
+  -webkit-transition: left 2s;
+  -moz-transition: left 2s;
+  -o-transition: left 2s;
+  font-size: 0;
 }
 
 .slider-button{
   position: relative;
   float: left;
-  background-color: rgb(44, 131, 176); /*Selected 163 163 163*/
+  background-color: rgb(44, 131, 176);
   height: 8px;
   width: 8px;
   border-radius: 50%;
   margin-left: 15px;
   left: 15px;
-  top: -65px;
+  top: -40px;
   cursor: pointer;
   border: 1px solid transparent;
 }
@@ -102,6 +112,164 @@ img{
   border: 1px solid white;
 }
 
+/* Back bar */
+.back-bar{
+  width: var(--main-width);
+  height: 150px;
+  background-color: rgba(17,18, 19);
+  margin: auto;
+}
+
+.quote-container{
+  position: relative;
+  top: 25%;
+  left: 2%;
+}
+
+.social-icons-container{
+  position: relative;
+  float: right;
+  top: -15%;
+  left: -2%;
+}
+
+.social-icons{
+  cursor: pointer;
+}
+
+
+
+/* Body of website */
+.body-container{
+  position: relative;
+  width: var(--main-width);
+  background-color: white;
+  margin: auto;
+  overflow: auto;
+}
+
+/* Articles */
+.article-container{
+  border: 1px solid red;
+  position: relative;
+  width: 73%;
+  /* height: 60%; */
+  float: left;
+}
+
+.article{
+  margin-left: 10px;
+  margin-top: 20px;
+  position: relative;
+  padding: 10px;
+  border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+.article img{
+  float: left;
+  border: 4px solid rgb(238, 238, 238);
+  border-collapse: collapse;
+}
+
+.article  h2, .article > a, .article p{
+  position: relative;
+  left: 20px;
+}
+
+.article h2{
+  position: relative;
+  margin: 0px;
+}
+
+.article > a{
+  color: rgb(44, 131, 176);
+  font-size: 10px;
+}
+
+.hidden-text{
+  display: none;
+}
+
+.article button{
+  position: relative;
+  color: white;
+  background: rgb(92, 170, 210);
+  border-radius: 5px;
+  border: none;
+  margin-left: 30px;
+  width: 150px;
+  height: 30px;
+  font-weight: bold;
+}
+
+/* Side bar */ 
+.side-bar{
+  border: 2px solid green;
+  position: relative;
+  width: 26%;
+  height: 60%;
+  float: right;
+  background-image: linear-gradient(to bottom, rgb(238, 238, 238) 60%, white);
+}
+
+.side-bar > * {
+  margin-left: 20px;
+}
+
+.side-bar a{
+  color: rgb(44, 131, 176);
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+
+.side-bar a:hover{
+  color: rgb(74, 161, 206);
+}
+
+/* Change page buttons */
+.change-page-button-container{
+  border: 1px solid red;
+  float: left;
+}
+
+/* Sponsor block */
+.sponsor-container{
+  position: relative;
+  float:left;
+  border: 1px solid yellow;
+  width: 99.8%;
+}
+
+.sponsor-container h2{
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+.sponsor-table{
+  margin: auto;
+}
+
+.sponsor-table td{
+  height: 80px;
+  width: 150px;
+  border: 8px solid rgb(238, 238, 238);
+  text-align: center;
+  padding: 5px;
+}
+
+.sponsor-table img{
+  height: 90%;
+}
+
+
+/*Footer*/
+.footer{
+  margin: auto;
+  width: var(--main-width);
+  background-color: black;
+  height: 200px;
+  margin-top: -20px;
+}
 
 
 
