@@ -1,7 +1,8 @@
 Brown Rabbit
 ============
 
-This is the job test if you wish to be a web developer at HTML24
+This is my take on the HTML24 web developer job test. All the requirements and instructions can be read below.
+My solution is hosted at: 
 
 Contents
 --------
