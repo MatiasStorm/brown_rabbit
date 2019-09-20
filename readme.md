@@ -2,7 +2,8 @@ Brown Rabbit
 ============
 
 This is my take on the HTML24 web developer job test. All the requirements and instructions can be read below.
-My solution is hosted at: 
+
+My solution is hosted at: https://matiasstorm.github.io/brown_rabbit/
 
 Contents
 --------
